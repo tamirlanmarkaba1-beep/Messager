@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b6fee"/>
+      <stop offset="100%" stop-color="#4c2dad"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b09af5" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#6b4fd4" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#6b4fd4" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="120" ry="120" fill="url(#bg)" filter="url(#shadow)"/>
+  <!-- Subtle inner glow -->
+  <rect width="512" height="512" rx="120" ry="120" fill="url(#glow)"/>
+  <!-- Chat bubble -->
+  <path d="M136 160 C136 139 153 122 174 122 L338 122 C359 122 376 139 376 160 L376 290 C376 311 359 328 338 328 L256 328 L208 390 L208 328 L174 328 C153 328 136 311 136 290 Z" fill="white" opacity="0.95"/>
+  <!-- Three dots -->
+  <circle cx="200" cy="225" r="20" fill="#6b4fd4"/>
+  <circle cx="256" cy="225" r="20" fill="#8b6fee"/>
+  <circle cx="312" cy="225" r="20" fill="#b09af5"/>
+</svg>
